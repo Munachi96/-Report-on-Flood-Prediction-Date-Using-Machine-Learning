@@ -163,7 +163,7 @@ plt.title('Windspeed over Time')
 plt.legend()
 plt.show()
 
-Observation
+#Observation
 
 #The windspeed data exhibits variability, with some periods experiencing higher wind speeds.
 #Peaks in windspeed could suggest strong weather systems that might bring precipitation.
@@ -233,7 +233,7 @@ data['Flood'] = np.where(data['Precip'] >= threshold_precip, 1, 0)
 # Step 3: Verify and display the first few rows
 print(data[['datetime', 'Precip', 'Flood']].head())
 
-__Data Training
+
 
 # Select features (X) and target variable (y)
 features = ['import pandas as pd']
