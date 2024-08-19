@@ -1,0 +1,11 @@
+```
+import pandas as pd
+
+# Load the dataset
+file_path = 'latest lagos weather dataset.csv'
+lagos_weather_data = pd.read_csv(file_path)
+
+# Display the first few rows and the column names of the dataset
+lagos_weather_data.head(), lagos_weather_data.columns
+
+```
