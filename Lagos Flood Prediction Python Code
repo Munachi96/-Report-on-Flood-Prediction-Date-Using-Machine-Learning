@@ -9,6 +9,7 @@ lagos_weather_data = pd.read_csv(file_path)
 # Display the first few rows and the column names of the dataset
 lagos_weather_data.head(), lagos_weather_data.columns
 
+* importing historical flood dataset
 
 import pandas as pd
 
@@ -25,5 +26,47 @@ weather_data_head = weather_data.head()
 flood_data_head = flood_data.head()
 
 weather_data_head, flood_data_head
+
+# Convert 'datetime' to datetime format
+weather_data['datetime'] = pd.to_datetime(weather_data['datetime'])
+
+# Check for missing values in both datasets
+weather_missing = weather_data.isnull().sum()
+flood_missing = flood_data.isnull().sum()
+
+weather_data.dtypes, weather_missing, flood_data.dtypes, flood_missing
+
+# Handle missing values
+weather_data['preciptype'].fillna('Unknown', inplace=True)
+weather_data['visibility'].fillna(weather_data['visibility'].mean(), inplace=True)
+weather_data['severerisk'].fillna(weather_data['severerisk'].mean(), inplace=True)
+
+# Convert 'sunrise' and 'sunset' to datetime if needed
+weather_data['sunrise'] = pd.to_datetime(weather_data['sunrise'], errors='coerce')
+weather_data['sunset'] = pd.to_datetime(weather_data['sunset'], errors='coerce')
+
+# Verify the changes
+weather_data.info()
+
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Plotting historical flood incidents
+plt.figure(figsize=(10, 6))
+sns.countplot(x='Year', data=flood_data)
+plt.title('Historical Flood Incidents in Lagos')
+plt.xlabel('Year')
+plt.ylabel('Number of Incidents')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+
+## Observations
+
+#There appears to be variability in flood incidents across different years. 
+#Some years show higher numbers of flood incidents than others, 
+#suggesting temporal patterns that could potentially be captured by time-based features in machine learning models.
+
 
 ```
