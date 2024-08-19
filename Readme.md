@@ -164,7 +164,7 @@ plt.legend()
 plt.show()
 
 #Observation
-
+ 
 #The windspeed data exhibits variability, with some periods experiencing higher wind speeds.
 #Peaks in windspeed could suggest strong weather systems that might bring precipitation.
 
