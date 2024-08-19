@@ -1,4 +1,5 @@
-```
+```python
+
 import pandas as pd
 
 # Load the dataset
@@ -7,5 +8,22 @@ lagos_weather_data = pd.read_csv(file_path)
 
 # Display the first few rows and the column names of the dataset
 lagos_weather_data.head(), lagos_weather_data.columns
+
+
+import pandas as pd
+
+# Load the datasets
+weather_data_path = 'latest lagos weather dataset.csv'
+flood_data_path = 'historica_flood.csv'
+
+# Read the CSV files
+weather_data = pd.read_csv(weather_data_path)
+flood_data = pd.read_csv(flood_data_path)
+
+# Display the first few rows of each dataset
+weather_data_head = weather_data.head()
+flood_data_head = flood_data.head()
+
+weather_data_head, flood_data_head
 
 ```
