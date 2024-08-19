@@ -1,6 +1,3 @@
-[Report Docs Link](https://docs.google.com/document/d/1u5OQGlacAGqAJnid8HYafyfoHCBCfTz87mbALprPeKI/edit)
-
-
 
 # Report Summary: Flood Prediction Using Machine Learning
 
@@ -25,5 +22,5 @@ This project explores the importance of flood prediction in minimizing damage to
 
 - Challenges: Technical challenges such as data quality issues and model limitations were identified. Practical challenges include integrating ML models into existing systems and ensuring ongoing model effectiveness.
 
-- Future Directions: Suggestions for future work include improving data quality, exploring new data sources, and developing real-time prediction systems to enhance flood management strategies.
+- Future Directions: Suggestions for future work include improving data quality, exploring new data sources, and developing real-time prediction systems to enhance flood management strategies.  [ FULL ANALYSIS REPORT HERE](https://docs.google.com/document/d/1u5OQGlacAGqAJnid8HYafyfoHCBCfTz87mbALprPeKI/edit)
 
