@@ -293,7 +293,6 @@ print("Confusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
 
 
-__ Flood Prediction
 
 # Predict the likelihood of future floods
 data['Flood_Prediction'] = model.predict(X)
