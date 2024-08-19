@@ -165,7 +165,7 @@ plt.show()
 
 Observation
 
-The windspeed data exhibits variability, with some periods experiencing higher wind speeds.
+#The windspeed data exhibits variability, with some periods experiencing higher wind speeds.
 #Peaks in windspeed could suggest strong weather systems that might bring precipitation.
 
 
@@ -178,9 +178,9 @@ plt.title('Wind Direction over Time')
 plt.legend()
 plt.show()
 
-Observations
+#Observations
 
-The wind direction graph shows the predominant wind directions over time.
+#The wind direction graph shows the predominant wind directions over time.
 #Periods with consistent wind directions might indicate the prevailing winds that carry moisture.
 
 
@@ -196,7 +196,7 @@ plt.show()
 
 Observations
 
-The precipitation data reveals the frequency and intensity of rainfall over time.
+#The precipitation data reveals the frequency and intensity of rainfall over time.
 #Noticeable peaks in precipitation could be indicative of heavy rainfall events that might lead to flooding.
 
 
